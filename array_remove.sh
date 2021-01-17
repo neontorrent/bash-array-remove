@@ -17,8 +17,8 @@ Example:
     fi
 
     local var_name="$1"
-    local array_name="$1[@]"
-    local array=("${!array_name}")
+    local __array_name__="$1[@]"
+    local array=("${!__array_name__}")
     shift
 
     local result=()
